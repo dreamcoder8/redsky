@@ -1,0 +1,33 @@
+$light: #00474a;
+
+@import "../vendor/bulma/bulma";
+
+
+
+// Abstract
+
+@import "components/abstract/mixins";
+
+
+// BASE
+
+@import "components/base/typography";
+
+
+// Components
+
+@import "components/components/heroimgs";
+@import "components/components/navigation";
+@import "components/components/footer";
+
+
+
+// PAGES
+
+
+@import "components/pages/index";
+@import "components/pages/trip-schedule";
+@import "components/pages/packing";
+@import "components/pages/travel";
+@import "components/pages/pricing";
+@import "components/pages/contact";

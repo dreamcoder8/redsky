@@ -1,0 +1,41 @@
+.navbar {
+  background-color: transparent;
+  top: 50px;
+
+  a {
+    color: #000000;
+    font-family: $paragraphfont;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 50px;
+    &:hover {
+      color: $headercolor;
+      background-color: transparent;
+    }
+  }
+
+  .navbar-item {
+    img {
+      max-height: none;
+      max-width: none;
+      height: 16rem;
+      width: 16rem;
+      position: absolute;
+      top: -21px;
+      left: 50px;
+    }
+  }
+
+
+  .navbar-end {
+    margin-right: 100px;
+  }
+}
+
+.pricing-nav {
+  a {
+    color: white;
+  }
+}

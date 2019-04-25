@@ -1,0 +1,116 @@
+<div class="hero contact-hero is-fullheight">
+  <div class="container is-fluid">
+    <div class="columns is-multiline">
+      <div class="column is-12 has-text-centered has-text-white contact-hero--text">
+        <h5>Drop The Line</h5>
+        <h5 class="rotate">></h5>
+      </div>
+      <div class="column is-10 is-offset-1 contact-hero--line"></div>
+    </div>
+  </div>
+</div>
+
+
+<form class="redsky-form" action="/contact" method="post" id="myForm">
+  <div class="container is-fluid">
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <input type="text" name="firstName" value="" placeholder="First Name" id="name"></input>
+      </div>
+      <div class="column is-4">
+        <input type="text" name="lastName" value="" placeholder="Last Name"></input>
+      </div>
+      <div class="column is-2">
+        <input type="phone" name="phone" value="" placeholder="Phone"></input>
+      </div>
+      <div class="column is-2">
+        <input type="text" name="shoeSizeOne" value="" placeholder="Shoe Size"></input>
+      </div>
+      <div class="column is-4">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <input type="email" name="email" value="" placeholder="Email Address" id="email"></input>
+          </div>
+          <div class="column is-8">
+            <input type="text" name="personTwo" value="" placeholder="Name of Additional Person">
+          </div>
+          <div class="column is-4">
+            <input type="text" name="shoeSizeTwo" value="" placeholder="Shoe Size">
+          </div>
+          <div class="column is-8">
+            <input type="text" name="personThree" value="" placeholder="Name of Additional Person">
+          </div>
+          <div class="column is-4">
+            <input type="text" name="shoeSizeThree" value="" placeholder="Shoe Size">
+          </div>
+          <div class="column is-8">
+            <input type="text" name="personFour" value="" placeholder="Name of Additional Person">
+          </div>
+          <div class="column is-4">
+            <input type="text" name="shoeSizeFour" value="" placeholder="Shoe Size">
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <input type="date" name="arrivalDate" value="" id="arrivalDate" class="datepicker" data-display-mode="inline">
+      </div>
+      <div class="column is-4">
+        <input type="date" name="departureDate" value="" id="departureDate" class="datepicker" data-display-mode="inline">
+      </div>
+      <div class="column is-12">
+        <textarea name="textMessage" placeholder="Additional Questions, Comments, or Requests Below"></textarea>
+      </div>
+      <div class="column is-8">
+        <p>Please note, emailing this contact form does not guarantee your reservation. Your booking is confirmed once your deposit is paid and your reservation is paid in full no fewer than 30 days before your arrival.</p>
+      </div>
+      <div class="column is-4">
+        <p>Placeholder For Captcha</p>
+      </div>
+      <div class="column is-4 is-offset-8">
+        <button type="submit" class="button btn-contact">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+<!-- <div class="container contact">
+  <div class="columns is-multiline">
+    <div class="column is-12">
+      <input type="date" name="check-in-date" value="" id="my-element" class="datepicker" data-display-mode="inline">
+    </div>
+    <div class="column is-12">
+      <input type="date" name="check-out-date" value="" id="my-element" class="datepicker" data-display-mode="inline">
+    </div>
+  </div>
+</div> -->
+
+
+<script src="/vendor/bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+<script type="text/javascript">
+// Initialize all input of type date
+var calendars = bulmaCalendar.attach('[type="date"]');
+
+// Loop on each calendar initialized
+for(var i = 0; i < calendars.length; i++) {
+// Add listener to date:selected event
+calendars[i].on('select', date => {
+  console.log(date);
+});
+}
+
+// To access to bulmaCalendar instance of an element
+var element = document.querySelector('#my-element');
+if (element) {
+// bulmaCalendar instance is available as element.bulmaCalendar
+element.bulmaCalendar.on('select', function(datepicker) {
+  console.log(datepicker.data.value());
+});
+}
+</script>

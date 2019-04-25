@@ -1,0 +1,39 @@
+ h1 {
+   color: $headercolor;
+   font-family: $headerfont;
+   font-size: 7.188rem;
+   font-weight: 500;
+   margin-top: 70px;
+ }
+
+ h3 {
+   color: $subheadercolor;
+   font-family: $subheaderfont;
+   font-weight: 500;
+   font-size: 2.625rem;
+   margin-top: -35px;
+ }
+
+ h6 {
+   color: $headercolor;
+   font-family: $paragraphfont;
+   font-weight: 500;
+   font-size: 1.75rem;
+ }
+
+ p {
+   color: $paragraphcolor;
+   font-family: $paragraphfont;
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 33px;
+ }
+
+ a {
+   font-family: $paragraphfont;
+   color: $headercolor;
+   text-decoration: underline;
+   &:hover {
+     color: $subheadercolor;
+   }
+ }

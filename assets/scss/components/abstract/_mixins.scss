@@ -1,0 +1,35 @@
+@mixin heroimg($imgpath, $position: center, $size: cover) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    size: $size;
+  }
+}
+
+
+@mixin cardbg($imgpath, $position: center, $size: cover, $height: 45.125rem) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    size: $size;
+  }
+    height: $height;
+}
+
+
+$headercolor: #4a9396;
+$subheadercolor: #00474a;
+$paragraphcolor: #585858;
+
+
+$headerfont: mongoose;
+$subheaderfont: chantal;
+$paragraphfont: objektiv-mk1;
+
+
+.container {
+  @include fullhd {
+    max-width: 1600px;
+    width: 1600px;
+  }
+}

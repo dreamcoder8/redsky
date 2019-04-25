@@ -1,0 +1,122 @@
+.index {
+ &--sportfishing {
+   p {
+     margin-top: 50px;
+     margin-bottom: 80px;
+   }
+ }
+}
+
+.is-4 {
+  a {
+    text-decoration: none;
+  }
+  .card {
+    position: relative;
+  }
+  .card-content {
+    width: 20.625rem;
+    height: 5.063rem;
+    background-color: rgba(74, 147, 150, 0.7);
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+    h5 {
+      color: white;
+      text-align: center;
+      font-family: $headerfont;
+      font-size: 3.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase
+    }
+  }
+
+}
+
+.is-8 {
+  a {
+    text-decoration: none;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .card-content {
+    width: 27.688rem;
+    height: 5.063rem;
+    background-color: rgba(74, 147, 150, 0.7);
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  h5 {
+    color: white;
+    text-align: center;
+    font-family: $headerfont;
+    font-size: 3.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase
+  }
+}
+
+
+.index {
+
+  &--about-logo {
+    margin-top: -350px;
+    position: relative;
+    top: 490px;
+  }
+
+
+ &--about {
+    height: 43.625rem;
+
+   h1, h3, p {
+     color: $white;
+   }
+
+   h1 {
+     margin-top: -45px;
+   }
+
+   h3 {
+     margin-top: -50px;
+   }
+
+   p {
+     padding: 5px 0;
+     padding-right: 200px;
+   }
+
+   .columns {
+     padding: 70px 0px;
+   }
+
+
+ } // end about
+
+&--boat {
+
+  img {
+    margin-top: 100px;
+  }
+
+  h3 {
+    margin-top: -50px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+}
+
+} //end idex

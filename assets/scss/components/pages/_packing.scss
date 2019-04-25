@@ -1,0 +1,17 @@
+.packing {
+  p {
+    margin-top: 50px;
+  }
+
+  .is-4 {
+    margin-top: 150px;
+    li {
+      padding-top: 30px;
+      font-size: 1.25rem;
+      color: $paragraphcolor;
+      line-height: 3.125rem;
+      font-family: $paragraphfont;
+      font-weight: 500;
+    }
+  }
+}
